@@ -11,6 +11,7 @@ https://k6.io/docs/get-started/installation/
 ### how to run
 
 `k6 run test1.js`
+`docker run --rm -i -v .:/app -w /app grafana/k6 run test1.js` # wouldn't work with requests to localhost, but it'd be useful for ci/cd env.
 
 ### notes
 
